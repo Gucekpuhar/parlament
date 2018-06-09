@@ -1,0 +1,205 @@
+h1 { color: rgba(255,221,0,1.0); font-family: 'Oswald', sans-serif;; font-size: 42px; font-weight: 400; font-style: normal; line-height: 44px; margin: 10px;
+padding: 30px;
+text-align: center;background: rgba(0, 93, 164, 1.0);
+
+    border-color: rgba(237, 28, 36, 1.0);
+    border-width: 5px;
+}
+h2 { color: #005DA3; font-family: 'Roboto', sans-serif; font-size: 27px; font-weight: 400; font-style: normal; line-height: 44px; margin: 0 0 12px; text-align: left; margin-left: 10px; }
+
+#pop{ color: #005DA3; font-family: 'Roboto', sans-serif; font-size: 27px; font-weight: 400; font-style: normal; line-height: 44px; margin: 0 0 12px; }
+body{
+    background-color: #ffffff;
+    font-style: normal;
+   font-family: 'Roboto', sans-serif;
+ 
+}
+#inline{width:100%;height:auto;display:flex;}
+   #stolpcniDiagram1,#stolpcniDiagram2,#stolpcniDiagram3{width:33%;height:200px;margin:10px;}
+    
+#inline2{width:100%;height:auto;display:flex;font-style: normal; font-family: 'Roboto', sans-serif;}
+    #SeznamSej{width:20%;margin:10px;font-style: normal;font-family: 'Roboto', sans-serif; }
+    #izpis{width:50%;margin:10px;}
+#zborZD{
+    position: relative;
+}
+#zborDP{
+    position: relative;
+}
+#zborOB{
+    position: relative;
+}
+
+
+.container ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+	overflow: auto;
+}
+
+ul li{
+  color: #000000;
+  display: inline;
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 33%;
+  height: 80px;
+  border-bottom: 1px solid #333;
+}
+
+ul li input[type=radio]{
+  position: relative;
+ visibility: hidden;
+}
+
+ul li:hover {
+	color: #005DA3;
+}
+ul li .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 30px;
+  left: 49%;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+ul li:hover .check {
+  border: 5px solid #005DA3;
+}
+
+ul li .check::before {
+  display: block;
+  position: absolute;
+	content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+	left: 5px;
+  margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 5px solid #005DA3;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #005DA3;
+}
+
+input[type=radio]:checked ~ label{
+  color: #005DA3;
+}
+
+
+
+ select{
+    border: 2px solid #005DA3;
+    outline: #005DA3;
+    background: white;
+   
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 20%;
+    padding: 12px 55px 15px 15px;
+    font-size: 14px;
+    color: #005DA3;
+  
+ }
+ 
+ .footer{
+   
+   font-size: 16px;
+ 
+   position: static;
+   line-height: 100%;
+   bottom: 0px;
+   
+   
+ }
+ 
+ .coat{
+ 
+   width: 5%;
+
+ }
+  .logo{
+    
+    width: 5%;
+   
+    
+ }
+ 
+ .flex {
+  display: flex;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+     padding-top: 100px;
+     line-height: 100%;
+     margin-bottom: 20px;
+     
+}
+
+.flex > .col-md-2 {
+  display: flex;                   /* create nested flex container */
+  flex-direction: column;          /* stack children (image and number) vertically */
+}
+
+img { margin: auto;} 
+
+#myBtn{
+     position: absolute;
+     right: 30px;
+    
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: white;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
